@@ -1,0 +1,78 @@
+{
+    "mega": [
+        {
+            "eventID":11, 
+            "year": 2014, 
+            "description":"company moves to a new headquarters and spends £25 million on refurbishments",
+            "immediateEffect": -15, 
+            "overTimeEffect": 3
+
+        },
+        {
+            "eventID":12,
+            "year": 2015,
+            "description":"revealed a reduction in pre-tax profit from £115 million to £85 million and CFO resigns",
+            "immediateEffect":-20, 
+            "overTimeEffect": -5 
+
+        },
+        {
+            "eventID":13,
+            "year": 2016,
+            "description":"minor",
+            "immediateEffect":-5, 
+            "overTimeEffect": 2
+        },
+        {
+            "eventID": 14,
+            "year": 2017,
+            "description":"opens 2 new large stores ",
+            "immediateEffect":10,  
+            "overTimeEffect":-3 
+        },
+        {
+            "eventID": 15,
+            "year": 2018,
+            "description":"the company announced a reduction of up to 320 store management roles across the business by the end of March",
+            "immediateEffect":-30,
+            "overTimeEffect":-10
+        },
+        {
+            "eventID": 16,
+            "year": 2019,
+            "description":"announced the largest loss in its history, a pre-tax loss of £491 million and the closure of up to 50 stores with the potential loss of 4,000 jobs  ( complete closure of stores )",
+            "immediateEffect":-10, 
+            "overTimeEffect":0
+        }
+
+
+],
+
+"medium" : [
+        {
+            "description": "Henricks opened a few test pop-up stores across the country. ", 
+            "immediateEffect": 3
+        },
+        {
+            "description": "Henriks collaborates with a local charity for a community outreach program.", 
+            "immediateEffect": 4
+        },
+        {
+            "description": "Henriks launches a social media campaign to engage with its online audience. ", 
+            "immediateEffect": 2
+        },
+        {
+            "description": "Product recall affecting its athletic wear line.", 
+            "immediateEffect": -2
+        },
+        {
+            "description": "Supply chain disruptions cause delays in product shipments.", 
+            "immediateEffect": -3
+        },
+        {
+            "description": "Economic downturn leads to reduced consumer spending. ", 
+            "immediateEffect": -2
+        }
+
+    ]
+}

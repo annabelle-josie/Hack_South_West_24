@@ -1,0 +1,113 @@
+{
+    "mega": [
+        {
+            "eventID":41, 
+            "year": 2014, 
+            "description": "the company made its third consecutive appearance on Fortune's Fastest-Growing Companies list",
+            "immediateEffect": 2,
+            "overTimeEffect":1
+    
+        },
+        {
+            "eventID":42, 
+            "year": 2015, 
+            "description":"its first store in Europe, a flagship shop in Covent Garden, London",
+            "immediateEffect":1, 
+            "overTimeEffect":1
+    
+        },
+        {
+            "eventID":43,
+            "year": 2016,
+            "description":"event",
+            "immediateEffect":0,
+            "overTimeEffect":2
+    
+        },
+        {
+            "eventID":44,
+            "year": 2017,
+            "description ": "event",
+            "immediateEffect": 0,
+            "overTimeEffect":1
+        },
+        {
+            "eventID": 45,
+            "year": 2018,
+            "description":"Laurent Potdevin resigned as CEO and from the company's board due to misconduct related to a relationship he was having with a then-employee and later contractor",
+            "immediateEffect":-3, 
+            "overTimeEffect":-1
+        },
+        {
+            "eventID": 46,
+            "year": 2019,
+            "description":"announced an investment in MIRROR, a home exercise startup that sells an interactive fitness mirror with a camera and speakers for at-home workouts. Capitalizing on a growing trend of people conducting virtual workouts at home instead of going to a gym due to the COVID-19 pandemic",
+            "immediateEffect":5, 
+            "overTimeEffect":10
+        },
+        {
+            "eventID": 47,
+            "year": 2020,
+            "description": " event",
+            "immediateEffect": 0, 
+            "overTimeEffect": 5 
+        
+        },
+        {
+            "eventID": 48,
+            "year": 2021,
+            "description": "1,698 yoga teachers and students via advocacy groups Stand.earth and Actions Speaks Louder wrote to the company demanding a transition to 100% renewable energy by 2030.",
+            "immediateEffect": -5, 
+            "overTimeEffect": 4
+        },
+        {
+            "eventID": 49,
+            "year": 2022,
+            "description":"increasing into the top 448 companies globally ",
+            "immediateEffect":5, 
+            "overTimeEffect":10
+        },
+    
+        {
+            "eventID": 491,
+            "year": 2023,
+            "description": "event",
+            "immediateEffect":-10, 
+            "overTimeEffect":-15
+        },
+        {
+            "eventID": 492,
+            "year": 2024,
+            "description": "event",
+            "immediateEffect":10, 
+            "overTimeEffect":5
+        }
+],
+    "medium": [
+        {
+            "description": "A positive viral trend on social media promotes Jojo Corporation's athletic wear.", 
+            "immediateEffect": 4
+        },
+        {
+            "description": "Jojo Corporation launches a new line of eco-friendly products.", 
+            "immediateEffect": 3
+        },
+        {
+            "description": "Economic conditions result in increased consumer spending on fitness-related products.", 
+            "immediateEffect": 2
+        },
+        {
+            "description": "Marketing campaign receives negative feedback", 
+            "immediateEffect": -2
+        },
+        {
+            "description": "A key supplier for Jojo Corporation faces financial troubles.", 
+            "immediateEffect": -1
+        },
+        {
+            "description": "Marketing campaign receives negative feedback.", 
+            "immediateEffect": -2
+        }
+
+    ]
+}

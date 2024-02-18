@@ -1,0 +1,79 @@
+{
+    "mega": [
+        {
+            "year": 2014, 
+            "description": "Acquires an Artifial intelligence company for £380 million", 
+            "immediateEffect" :3,
+            "overTimeEffect": 4
+
+        },
+
+        {
+            "year": 2018,
+            "description": "Announced that it would enter the video game market, launching a cloud gaming platform called Palmer World",
+            "immediateEffect": 2,
+            "overTimeEffect": 2
+        },
+        {
+            "year": 2019,
+            "description": "US Department of Justice reported that it would investigate Palmer Tech for antitrust violations",
+            "immediateEffect": -3, 
+            "overTimeEffect": 1
+        },
+        {
+            "year": 2020,
+            "description": "Because of COVID-19 several cost-cutting measures were announced. Such measures included slowing down hiring for the remainder of 2020",
+            "immediateEffect": 2,  
+            "overTimeEffect": 4  
+        },
+        {
+            "year": 2020,
+            "description": "Because of COVID-19 several cost-cutting measures were announced. Such measures included slowing down hiring for the remainder of 2020",
+            "immediateEffect": 0, 
+            "overTimeEffect": 8
+
+        },
+        {
+            "year": 2021,
+            "description": "The CEO says something bad.",
+            "immediateEffect":-10,  
+            "overTimeEffect": 5
+        },
+        {
+            "year": 2022,
+            "description":"Australian government require Palmer Tech to pay media companies for the right to use their content. In response, Palmer Tech threatened to close off access to its search engine in Australia",
+            "immediateEffect":-5, 
+            "overTimeEffect":-3  
+        },
+    
+        {
+            "year": 2023,
+            "description": "Palmer Tech announced its plans to build two additional data centers in Ohio, adding to the already operational centre bringing its total investment in Ohio to over $2 billion", 
+            "immediateEffect": 3,  
+            "overTimeEffect": 4
+        }
+],
+    "medium": [
+        {
+            "description": "Government incentives for tech innovation benefit Palmer Tech. ", 
+            "immediateEffect": 3
+        },
+        {
+            "description": "Palmer Tech's research and development efforts yield breakthrough innovations. ", 
+            "immediateEffect": 4
+        },
+        {
+            "description": "Palmer Tech receives positive reviews for its latest product release", 
+            "immediateEffect": 3
+        },
+        {
+            "description": "Technical issues affect Palmer Tech's cloud computing services ", 
+            "immediateEffect": -3
+        },
+        {
+            "description": "Palmer Tech faces a class-action lawsuit for alleged privacy breaches. ", 
+            "immediateEffect": -2
+        }
+
+    ]
+}

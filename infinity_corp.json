@@ -1,0 +1,112 @@
+{
+    "mega": [
+        {
+            "eventID":21, 
+            "year": 2014, 
+            "description": "nothing" , 
+            "immediateEffect":0,
+            "overTimeEffect":1
+        },
+        {
+            "eventID":22, 
+            "year": 2015, 
+            "description":"starts creating an luxury suv that has 250,000 pre orders",
+            "immediateEffect":2, 
+            "overTimeEffect":1
+        },
+        {
+            "eventID":23,
+            "year": 2016,
+            "description":"The E- 45 was annouced the bestselling plug-in electric car worldwide for 2015 and 2016",
+            "immediateEffect":2,
+            "overTimeEffect":1
+
+        },
+        {
+            "eventID":24,
+            "year": 2017,
+            "description": "event",
+            "immediateEffect":0,
+            "overTimeEffect":2
+        },
+        {
+            "eventID": 25,
+            "year": 2018,
+            "description":"robots and uatomation significant delays and production problems, a period which the company would later come to describe as 'production hell.'",
+            "immediateEffect":-3,
+            "overTimeEffect":-2
+        },
+        {
+            "eventID": 26,
+            "year": 2019,
+            "description":"reported four consecutive profitable quarters for the first time, which made it eligible for inclusion in the S&P 500. Tesla was added to the index on December",
+            "immediateEffect":4,
+            "overTimeEffect":2
+        },
+        {
+            "eventID": 27,
+            "year": 2020,
+            "description":"invested heavily in expanding its production capacity, opening three new Gigafactories in quick succession. Construction of Gigafactory Shanghai started in January 2019, as the first automobile factory in China fully owned by a foreign company (not a joint venture).",
+            "immediateEffect": 20,  
+            "overTimeEffect": 15
+        },
+        {
+            "eventID": 28,
+            "year": 2021,
+            "description": "event",
+            "immediateEffect":-5,  
+            "overTimeEffect":3
+        },
+        {
+            "eventID": 29,
+            "year": 2022,
+            "description":"The company's CEO purchases a social media website, after attempting initially to back out of the deal.",
+            "immediateEffect": 20, 
+            "overTimeEffect":10
+        },
+        {
+            "eventID": 29,
+            "year": 2022,
+            "description":"attempting to back out of the deal.",
+            "immediateEffect": -10, 
+            "overTimeEffect":-5
+        },
+        {
+            "eventID": 29,
+            "year": 2022,
+            "description":" sued to do deal and deal finally goes through",
+            "immediateEffect":-20, 
+            "overTimeEffect":-10
+        }, 
+        {
+            "eventID": 291,
+            "year": 2023,
+            "description":"event", 
+            "immediateEffect": 4, 
+            "overTimeEffect":6
+        }
+],
+    "medium": [
+        {
+            "description": "Infinity Corporation introduces a new color option for its solar panels.", 
+            "immediateEffect": 4
+        },
+        {
+            "description": "Infinity Corporation sponsors a local environmental initiative.", 
+            "immediateEffect": 3
+        },
+        {
+            "description": "Infinity Corporation launches a customer feedback campaign.", 
+            "immediateEffect": 2
+        },
+        {
+            "description": "Supply chain challenges result in delays for solar panel deliveries.", 
+            "immediateEffect": -4
+        },
+        {
+            "description": "AI-powered features malfunction", 
+            "immediateEffect": -3
+        }
+    ]
+}
+

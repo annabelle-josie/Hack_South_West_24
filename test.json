@@ -1,0 +1,87 @@
+{
+    "mega": [
+        {
+            "year": 2014, 
+            "description": "Aquires an Artifial intelligence company for £380 million", 
+            "immediateEffect" :15 ,
+            "overTimeEffect": 4
+
+        },
+        {
+           "year": 2015, 
+           "description": "Aquires an Artifial intelligence company for £380 million", 
+           "immediateEffect" :15 ,
+           "overTimeEffect": 4
+
+       },
+       {
+       "year": 2016, 
+       "description": "Aquires an Artifial intelligence company for £380 million", 
+       "immediateEffect" :15 ,
+       "overTimeEffect": 4
+
+        },
+        {
+           "year": 2017, 
+           "description": "Aquires an Artifial intelligence company for £380 million", 
+           "immediateEffect" :15 ,
+           "overTimeEffect": 4
+
+       },
+
+        {
+            "year": 2018,
+            "description": "announced that it would enter the video game market, launching a cloud gaming platform called palmer world",
+            "immediateEffect": 20,
+            "overTimeEffect": 5
+        },
+        {
+            "year": 2019,
+            "description": "us department of justice reported that it would investigate palmer tech for antitrust violations",
+            "immediateEffect": -20, 
+            "overTimeEffect": 5
+        },
+        {
+            
+            "year": 2020,
+            "description": "because of covid 19 announced several cost-cutting measures. Such measures included slowing down hiring for the remainder of 2020",
+            "immediateEffect": 15,  
+            "overTimeEffect": 10
+        },
+        {
+         
+            "year": 2021,
+            "description": "event",
+            "immediateEffect":30,  
+            "overTimeEffect": 10
+        },
+        {
+            "year": 2022,
+            "description":"australian government require palmer tech to pay media companies for the right to use their content. In response, palmer tech threatened to close off access to its search engine in Australia # starts to decreases major thne continuing too",
+            "immediateEffect":-20,
+            "overTimeEffect": -8
+        },
+        {
+            "year": 2023,
+            "description": "palmer tech announced its plans to build two additional data centers in ohio. adding to the already operational center bringing palmer techs total investment in Ohio to over $2 billion # start increasing slowly again ", 
+            "immediateEffect": 25, 
+            "overTimeEffect": 10
+    }
+], 
+
+"medium" : [
+    {
+        "description": "palmer tech its plans to build two additional data centers in ohio. adding to the already operational center bringing palmer techs total investment in Ohio to over $2 billion # start increasing slowly again ", 
+        "immediateEffect": 9
+    },
+    {
+        "description": "palmer announced its plans to build two additional data centers in ohio. adding to the already operational center bringing palmer techs total investment in Ohio to over $2 billion # start increasing slowly again ", 
+        "immediateEffect": -7
+    },
+    {
+        "description": " tech announced its plans to build two additional data centers in ohio. adding to the already operational center bringing palmer techs total investment in Ohio to over $2 billion # start increasing slowly again ", 
+        "immediateEffect": 3
+    }
+
+  ]
+} 

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BitLife for Stocks</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: space-evenly;
+            background-color: #000;
+            color: #ddd;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center; /* Vertically align items in the middle */
+            height: 40vh; /* 40% height of the viewport */
+            color: #ddd;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat({{player_board|length}}, 1fr);
+            grid-gap: 0px;
+            width: 40vw; /* 40% of viewport width */
+            height: 40vw; /* Equal to width for a square grid */
+            color: #ddd;
+        }
+
+        .small-grid {
+            display: grid;
+            grid-template-columns: repeat({{player_board|length}}, 1fr);
+            grid-gap: 0px;
+            width: 25vw; /* 25% of viewport width */
+            height: 25vw; /* Equal to width for a square grid */
+            color: #ddd;
+        }
+
+        .small-div {
+            padding: 30px 50px 10px 10px;
+        }
+
+        .grid div, .small-grid div {
+            border: 1px solid #000;
+            height: 100%; /* Full height of the grid */
+        }
+
+        .grid div:hover, .small-grid div:hover {
+            background-color: #ddd;
+        }
+
+        .gamelog{
+            text-align: center;
+            text-transform: uppercase;
+            color: #ddd;
+        }
+
+
+        #messageBox{
+            height: 10em; /* Adjust as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            white-space: pre-line; /* Preserve line breaks */
+            line-height: 1em; /* Adjust as needed */
+            color: #ddd;
+        }
+
+        button{
+            color: white;
+            background-color: black;
+            border-color: white;
+            border-radius: 8px;
+        }
+
+        
+
+
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function update_event_log(){
+            let event = {{new_event|tojson}};
+            document.getElementById('messageBox').innerHTML = event + "<br>" + document.getElementById('messageBox').innerHTML;
+        }
+
+        function moneyIn(){
+            let money = {{user_money|tojson}};
+            return money;
+        }
+
+        function nameIn(){
+            let name = {{name_in|tojson}};
+            return name;
+        }
+
+        function descriptionIn(){
+            let description = {{description_in|tojson}};
+            return description;
+        }
+
+        function xDataIn(){
+            let xData = {{xData_in|tojson}};
+            return xData;
+        }
+
+        function yDataIn(){
+            let the_name = {{name_in|tojson}};
+            return the_name;
+        }
+
+        function investmentIn(){
+            let the_investment = {{investment_in|tojson}};
+            return the_investment;
+        }
+
+
+      // function stockOwned(){
+      //     let stock_owned= {{investment_in|tojson}};
+      //     return stock-owned;
+      // }
+
+        function update(){
+            let the_name = nameIn()
+            let money = moneyIn()
+            let description = descriptionIn()
+            let investment = investmentIn()
+            // let xData = xDataIn()
+            // let yData = yDataIn()
+            document.getElementById("company_title").innerHTML = the_name;
+            document.getElementById("moneyCounter").innerHTML = "Money: " + money;
+            document.getElementById("current_investment").innerHTML = "Current Investment: " + investment;
+            document.getElementById("company_description").innerHTML = description;
+            update_event_log();
+        }
+
+    </script>
+</head>
+
+
+<body onload="update()">
+    <div class="tab">
+        <h1>Company List</h1>
+        <div>
+            <form action="{{ url_for('henriks_redirect') }}" method="post">
+                <button type="submit">Henriks Department Store</button>
+            </form>
+
+            <form action="{{ url_for('infinity_redirect') }}" method="post">
+                <button type="submit">Infinity Corperation</button>
+            </form>
+
+            <form action="{{ url_for('palmer_redirect') }}" method="post">
+                <button type="submit">Palmer Tech</button>
+            </form>
+
+            <form action="{{ url_for('jojo_redirect') }}" method="post">
+                <button type="submit">JoJo Corp</button>
+            </form>
+        </div>
+
+        <div>
+            <p id="moneyCounter">Money: </p>
+        </div>
+
+        <div class="timer_button">
+            <form action="{{ url_for('timer_button') }}" method="post">
+                <button type="submit">Incriment time</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="main_panel">
+        <div class="gamelog">
+            <h2 id="company_title"> Company title - you shouldn't see this </h2>
+        </div>
+        <h2 id="company_description"></h2>
+            <div class="graph">
+                <!-- Graph -->
+                <div style="height: 40vh; width: 100%; border-color: aliceblue;">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <script>
+                    const labels = {{xData_in|tojson}};
+            
+                    const data = {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Sales',
+                                backgroundColor: 'rgb(255, 99, 132)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: {{yData_in|tojson}},
+                            }]
+                    };
+            
+                        const config = {
+                        type: 'line',
+                        data: data,
+                        options: { maintainAspectRatio: false , backgroundColor: 'rgb(255, 255, 255)',
+                                borderColor: 'rgb(255, 255, 255)',}
+                        };
+                    
+                            const myChart = new Chart(
+                                document.getElementById('myChart'),
+                                config
+                    );
+                </script>
+            </div>
+
+        <div class="container">
+            <div class="small-div">
+                    <!-- Event Log -->
+                    <div class="gameLog">
+                        <h2 id="gameLog">Event Log:</h2>
+                        <h2 id="messageBox">  </h2>
+                    </div>
+            </div>
+            <div class="small-div">
+                    <!-- Invest/Sell Options -->
+                    <h1 id="current_investment">Current Investment: </h1>
+                    <p>click buttons below to buy or sell stock</p>
+                    <div>
+                        <form action="{{ url_for('money_out_redirect') }}" method="post">
+                            <button type="submit" onclick="update()"><img src="{{url_for('static', filename='invest_image.png')}}" alt="Invest Button" width="100" height="100"></button>
+                        </form>
+
+                        <form action="{{ url_for('money_in_redirect') }}" method="post">
+                            <button type="submit" onclick="update()"><img src="{{url_for('static', filename='sell_image.png')}}" alt="Sell Button" width="100" height="100"></button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
